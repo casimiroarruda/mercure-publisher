@@ -59,7 +59,15 @@ Entao, populamos o Banco de Dados:
 symfony console doctrine:fixtures:load
 ```
 
-Agora, com o [mercure-subscriber](https://github.com/duodraco/mercure-subscriber) e o [hub](#hub) rodando, vamos fazer o `estalar de dedos`:
+Com isso, já podemos ver nossa API. Caso esteja usando o Symfony Client *, pode levantar o servidor com:
+
+```bash
+symfony serve
+```
+* Para instalar, basta seguir as orientações [nesta página](https://symfony.com/download)
+* Caso não esteja usando, acredito que saiba como levantar um servidor http, lembrando que o diretório a ser usado é o `public` e estamos usando `https` ;).
+
+Agora, com o [mercure-subscriber](https://github.com/duodraco/mercure-subscriber), o [hub](#hub) e a API rodando, vamos fazer o `estalar de dedos`:
 ```zsh
 ./bin/console app:thanos-snap
 ```
