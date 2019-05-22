@@ -3,10 +3,13 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiFilter;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 
 /**
- * @ApiResource()
+ * @ApiResource(mercure=true)
+ * @ApiFilter(SearchFilter::class, properties={"name": "exact", "isActive": "exact"})
  * @ORM\Entity(repositoryClass="App\Repository\AvengerRepository")
  */
 class Avenger

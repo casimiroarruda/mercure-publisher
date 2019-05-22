@@ -1,18 +1,23 @@
 {
+    "name": "duodraco/mercure-publisher",
+    "description": "Mercure publisher demo application",
+    "minimum-stability": "beta",
     "type": "project",
-    "license": "proprietary",
+    "license": "MIT",
     "require": {
         "php": "^7.1.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "api-platform/api-pack": "^1.2",
         "doctrine/doctrine-migrations-bundle": "^2.0",
-        "symfony/console": "4.2.*",
-        "symfony/dotenv": "4.2.*",
+        "symfony/console": "^4.3",
+        "symfony/dotenv": "^4.3",
         "symfony/flex": "^1.1",
-        "symfony/framework-bundle": "4.2.*",
+        "symfony/framework-bundle": "^4.3",
+        "symfony/http-client": "^4.3",
         "symfony/mercure-bundle": "^0.1.1",
-        "symfony/yaml": "4.2.*"
+        "symfony/process": "^4.3",
+        "symfony/yaml": "^4.3"
     },
     "config": {
         "preferred-install": {
@@ -56,10 +61,11 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "4.2.*"
+            "require": "^4.3"
         }
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.1",
         "symfony/maker-bundle": "^1.11"
     }
 }
